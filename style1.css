@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.hero{
+    height: 100vh;
+    width: 100vw;
+    background: #eff4fd
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+    padding: 30px 80px;
+
+}
+
+
+
+.logo{
+    font-size: 30px;
+   font-weight: bold;
+    color: blue;
+    
+}
+.logo::first-letter{
+    font-size: 45px;
+    border: solid blue;
+    border-right: transparent;
+    color: crimson;
+}
+
+nav ul li {
+    display: inline-block ;
+    list-style: none;
+    padding: 10px 20px
+}
+
+nav ul li a {
+    color: black;
+    position: relative;
+    padding: 5px 0;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: crimson;
+}
+
+
+nav ul li a::after {
+    content:"";
+    bottom: 0;
+    left: 0;
+    width: 0;
+    position: absolute;
+    height: 3px;
+    background: blue;
+    transition: .3s;
+}
+
+
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+
+.btn{
+    color: aqua;
+    font-size: 15px;
+    text-transform: uppercase;
+    background: red;
+    padding: 5px 5px;
+    border-radius: 500px;
+    display:inline-block;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid red;
+    line-height: 10px;
+}
+
+
+
+
+
+.btn:hover {
+
+    background: transparent ;
+    color: rosybrown;
+}
+
+
+.fa-cart-shopping {
+    font-size:large;
+    position: absolute;
+    top: 7%;
+    left: 80%;
+
+}
+
+
+.fa-magnifying-glass {
+    font-size:large;
+    position: absolute;
+    top: 7%;
+    left: 84%;
+}
+
+
+.detail {
+    position: absolute;
+    top: 35%;
+    left: 15%;
+}
+
+.detail h1 {
+
+    color: black;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 160px;
+
+}
+
+
+
+
+
+.detail p {
+    
+    line-height: 40px;
+}
+
+
+
+footer {
+   position: absolute;
+    background-color: rgb(67, 67, 68);
+   height: 20vh;
+   width: 100vw;
+   padding-top: 30px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   text-align: center;
+}
+
+.footer-content h4 {
+    font-size: medium;
+    text-transform: capitalize;
+    line-height: 1.8rem;
+
+}
+
+.social {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social li {
+    margin: 0 15px;
+}
+
+.social li a {
+
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.social li a i {
+
+font-size: 20px;
+
+}
+
+.social li a:hover i {
+
+    color: azure;
+}
+
+.footer-bottom {
+
+   text-align: center;
+   padding: 18px;
+}
+
+.footer-bottom p {
+
+    font-size: 18px;
+   text-transform: capitalize;
+
+}
